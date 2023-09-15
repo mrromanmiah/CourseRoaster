@@ -7,17 +7,41 @@ import Cart from '../Cart/Cart';
 const Card = () => {
 const [cards, setCards] = useState([]);
 const [course, setCourse] = useState([]);
+const [remainingCredit, setRemainingCredit] = useState(20);
+const [creditTaken, setCreditTaken] = useState(0);
 
     useEffect(() => {
 fetch('./course.json')
 .then(res=>res.json())
-.then((data) => setCards(data))
+.then((data) => setCards(data));
     },[]);
 
 const handleSelectCourse = (card) => {
-    setCourse([...course, card]);
+    
 
-}
+    const isSelected = course.find((selected) => selected.id === card.id);
+    let credits = card.credit;
+    if (isSelected) {
+       return alert('already selected');
+    } else {
+
+        course.forEach((selected) => {
+            credits += selected.credit;
+        });
+        const remainingCredits = 20 - credits;
+        if (credits > 20) {
+           return alert('all credits taken')
+        }else{
+            setRemainingCredit(remainingCredits);
+            setCreditTaken(credits);
+            setCourse([...course, card]);
+        }
+
+        
+    }
+
+    
+};
 
 
 
@@ -54,7 +78,7 @@ const handleSelectCourse = (card) => {
         </div>
 
         <div className='w-1/4 mt-8'>
-            <Cart course={course}></Cart>
+            <Cart course={course} remainingCredit={remainingCredit} creditTaken={creditTaken}></Cart>
         </div>
 
       </div>
