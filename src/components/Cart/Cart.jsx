@@ -1,9 +1,5 @@
-
-
-const Cart = ({ course, remainingCredit, creditTaken }) => {
-    console.log(course);
-
-
+/* eslint-disable react/prop-types */
+const Cart = ({ course, remainingCredit, creditTaken, prices }) => {
     return (
         <div className="bg-white p-5 mr-12 rounded-xl">
             <h3 className="text-sm font-bold text-[#2F80ED] mb-3 mt-1">Credit Hour Remaining {remainingCredit} hr</h3>
@@ -17,7 +13,7 @@ const Cart = ({ course, remainingCredit, creditTaken }) => {
             <hr />
             <h3 className="py-3 text-[#1c1b1bcc] text-sm font-medium">Total Credit Hour : {creditTaken}</h3>
             <hr />
-            <h3 className="pt-3 text-[#1c1b1bcc] text-sm font-semibold">Total Price : 48000 USD</h3>
+            <h3 className="pt-3 text-[#1c1b1bcc] text-sm font-semibold">Total Price : {prices} USD</h3>
         </div>
     );
 };
