@@ -1,74 +1,74 @@
 [
-    {
-      "id": 1,
-      "cover": "https://i.ibb.co/3dcRSk9/Rectangle-1.png",
-      "title": "Introduction to C Programming",
-      "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
-      "price": 15000,
-      "credit": 1
-    },
-    {
-      "id": 2,
-      "cover": "https://i.ibb.co/5FwL8RJ/Rectangle-2.png",
-      "title": "Introduction to Algorithms",
-      "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
-      "price": 25000,
-      "credit": 2
-    },
-    {
-      "id": 3,
-      "cover": "https://i.ibb.co/S3xVfYZ/Rectangle-3.png",
-      "title": "Introduction to C++ for DSA",
-      "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
-      "price": 10000,
-      "credit": 10
-    },
-    {
-      "id": 4,
-      "cover": "https://i.ibb.co/YDYHx1R/Rectangle-4.png",
-      "title": "Basic Data Structures",
-      "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
-      "price": 35000,
-      "credit": 5
-    },
-    {
-      "id": 5,
-      "cover": "https://i.ibb.co/bvQQtV9/Rectangle-5.png",
-      "title": "Introduction to OOP Python",
-      "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
-      "price": 19000,
-      "credit": 5
-    },
-    {
-      "id": 6,
-      "cover": "https://i.ibb.co/VHKKZjd/Rectangle-6.png",
-      "title": "Software Engineering",
-      "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
-      "price": 23000,
-      "credit": 2
-    },
-    {
-      "id": 7,
-      "cover": "https://i.ibb.co/KzTbZP7/Rectangle-7.png",
-      "title": "AWS, Cloud Computing",
-      "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
-      "price": 35000,
-      "credit": 5
-    },
-    {
-      "id": 8,
-      "cover": "https://i.ibb.co/4KXYGmr/Rectangle-8.png",
-      "title": "Database (MySQL)",
-      "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
-      "price": 19000,
-      "credit": 5
-    },
-    {
-      "id": 9,
-      "cover": "https://i.ibb.co/hspnhfJ/Rectangle-9.png",
-      "title": "Problem-Solving Part",
-      "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
-      "price": 23000,
-      "credit": 2
-    }
-  ]
+  {
+    "id": 1,
+    "cover": "https://i.ibb.co/3dcRSk9/Rectangle-1.png",
+    "title": "Introduction to C Programming",
+    "description": "Master C Programming basics, including syntax, data structures, and problem-solving techniques, in this introductory course.",
+    "price": 15000,
+    "credit": 1
+  },
+  {
+    "id": 2,
+    "cover": "https://i.ibb.co/5FwL8RJ/Rectangle-2.png",
+    "title": "Introduction to Algorithms",
+    "description": "Dive into the world of algorithms, from theory to practical applications, in this comprehensive Introduction to Algorithms course.",
+    "price": 25000,
+    "credit": 2
+  },
+  {
+    "id": 3,
+    "cover": "https://i.ibb.co/S3xVfYZ/Rectangle-3.png",
+    "title": "Introduction to C++ for DSA",
+    "description": "Master C++ for Data Structures and Algorithms in this comprehensive introductory course, mastering key concepts and problem-solving.",
+    "price": 10000,
+    "credit": 10
+  },
+  {
+    "id": 4,
+    "cover": "https://i.ibb.co/YDYHx1R/Rectangle-4.png",
+    "title": "Basic Data Structures",
+    "description": "Establish a solid foundation in data structures with this introductory course, covering fundamental concepts and their applications.",
+    "price": 35000,
+    "credit": 5
+  },
+  {
+    "id": 5,
+    "cover": "https://i.ibb.co/bvQQtV9/Rectangle-5.png",
+    "title": "Introduction to OOP Python",
+    "description": "Explore Object-Oriented Programming in Python, mastering key concepts and applications in this introductory course.",
+    "price": 19000,
+    "credit": 5
+  },
+  {
+    "id": 6,
+    "cover": "https://i.ibb.co/VHKKZjd/Rectangle-6.png",
+    "title": "Software Engineering",
+    "description": "Immerse in Software Engineering principles and practices, covering development, testing, and maintenance in this comprehensive course.",
+    "price": 23000,
+    "credit": 2
+  },
+  {
+    "id": 7,
+    "cover": "https://i.ibb.co/KzTbZP7/Rectangle-7.png",
+    "title": "AWS, Cloud Computing",
+    "description": "Become an AWS and Cloud expert, covering cloud services, infrastructure, and deployment in this comprehensive course.",
+    "price": 35000,
+    "credit": 5
+  },
+  {
+    "id": 8,
+    "cover": "https://i.ibb.co/4KXYGmr/Rectangle-8.png",
+    "title": "Database (MySQL)",
+    "description": "Master MySQL fundamentals, including data storage, retrieval, and manipulation, in this introductory course.",
+    "price": 19000,
+    "credit": 5
+  },
+  {
+    "id": 9,
+    "cover": "https://i.ibb.co/hspnhfJ/Rectangle-9.png",
+    "title": "Problem-Solving Part",
+    "description": "Enhance problem-solving skills, refining analytical thinking through diverse challenging exercises in this course.",
+    "price": 23000,
+    "credit": 2
+  }
+]

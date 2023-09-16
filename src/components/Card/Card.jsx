@@ -37,7 +37,14 @@ const Card = () => {
             });
             const remainingCredits = 20 - credits;
             if (credits > 20) {
-                toast.error('Maximum 20 credits allowed', {
+                toast.error('Remaining credit hours will not be less than 0', {
+                    position: 'top-right',
+                    autoClose: 2000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                });
+                toast.error('Maximum 20 credit hours allowed', {
                     position: 'top-right',
                     autoClose: 2000,
                     hideProgressBar: false,
@@ -54,15 +61,15 @@ const Card = () => {
         }
     };
     return (
-        <div className='flex gap-5 mb-12'>
-            <div className='w-3/4 grid grid-cols-3 gap-5 ml-12 mt-8'>
+        <div className='lg:flex mb-12 lg:mx-12'>
+            <div className='w-3/4 lg:grid md:grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:gap-5 md:gap-5 gap-5 mx-auto mt-8 lg:mr-5'>
                 {
-                    cards.map((card) => (<div key={card.id} className='bg-white items-center space-y-3 p-3 rounded-xl hover:shadow-lg'>
+                    cards.map((card) => (<div key={card.id} className='bg-white items-center space-y-3 lg:p-3 md:p-3 p-5 rounded-xl hover:shadow-lg lg:mt-0 md:mt-0 mt-5'>
                         <img className='flex justify-center' src={card.cover} alt="" />
-                        <h3 className='text-[#1C1B1B] text-sm font-semibold'>{card.title}</h3>
+                        <h3 className='text-[#1C1B1B] text-base font-semibold'>{card.title}</h3>
                         <p className='text-[#1c1b1b99] text-xs font-normal'>{card.description}</p>
                         <div>
-                            <div className='flex items-center gap-4 text-[#1c1b1b99] text-xs font-semibold'>
+                            <div className='flex items-center gap-4 text-[#1c1b1b99] text-sm font-semibold'>
                                 <div className='flex items-center gap-3'>
                                     <p className='text-lg text-[#1C1B1B]'><FiDollarSign></FiDollarSign></p>
                                     <p>Price : {card.price}</p>
@@ -72,13 +79,12 @@ const Card = () => {
                                     <p>Credit : {card.credit}hr</p>
                                 </div>
                             </div>
-
                             <button onClick={() => handleSelectCourse(card)} className='bg-[#2F80ED] text-white rounded-lg w-full py-2 text-sm font-semibold mt-4'>Select</button>
                         </div>
                     </div>))
                 }
             </div>
-            <div className='w-1/4 mt-8'>
+            <div className='lg:w-1/4 md:w-3/4 w-auto lg:mx-auto md:mx-auto mx-14 mt-8'>
                 <Cart course={course} remainingCredit={remainingCredit} creditTaken={creditTaken} prices={prices}></Cart>
             </div>
             <ToastContainer
